@@ -1,0 +1,77 @@
+.about {
+    padding-top: 50px;
+}
+.about h1 {
+    font-family: "PT Sans Narrow", monospace, sans-serif;
+    text-align: center;
+    font-weight: bolder;
+}
+.about .about-bg {
+    background-image: url(../Images/about%20patterns.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
+.about .about-bg img {
+    display: block;
+    width: 490px;
+    margin: 0 auto;
+}
+.description {
+    width: 100%;
+    font-family: "PT Sans Narrow", monospace, sans-serif;
+    font-size: 1.2em;
+    margin-bottom: 50px;
+    overflow: auto;
+}
+.name {
+    width: 29%;
+    float: left;
+    box-sizing: border-box;
+}
+.character {
+    width: 70%;
+    float: right;
+    border-left: 5px solid black;
+    min-width: 0px;
+}
+.name p {
+    font-size: 2em;
+    text-align: right;
+    padding: 0px 20px;
+    margin: 0;
+}
+.name p span {
+    font-size: 2.5em;
+    text-shadow: 5px 5px gray;
+}
+.character p {
+    margin: 0;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+.character p:first-child {
+    width: 670px;
+    background-color: #bbd27d;
+}
+.character p:nth-child(2) {
+    width: 455px;
+    background-color: #8dc3da;
+}
+.character p:nth-child(3) {
+    width: 425px;
+    background-color: #e5d88f;
+}
+.character p:nth-child(4) {
+    width: 640px;
+    background-color: #f48b8b;
+}
+.character p:nth-child(5) {
+    width: 590px;
+    background-color: #b5b5a9;
+}
+.character p span {
+    font-weight: bold;
+    background-color: white;
+}
