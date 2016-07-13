@@ -1,0 +1,88 @@
+@media screen and (max-width:1020px) {
+    header .logo-text, header .social, header .main-nav {
+        display: none;
+    }
+    .scroll {
+        display: none;
+    }
+    .w3-opennav {
+        display: block;
+        color: white;
+        float: right;
+        padding: 5px 10px 0 0;
+    }
+    .big-panel {
+        margin-top: 20px;
+        background-attachment: scroll;
+        background-image: url('../Images/Jei%20(Responsive).png');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .s-container .big-panel .scroll {
+        display: none;
+    }
+    .works img {
+        width: 90%;
+    }
+    .works h2 {
+        margin-top: -10px;
+    }
+    .contact-me h1, .contact-me h2, .contact-me h3, .contact-me h4, .contact-me h5 {
+        width: 100%;
+    }
+    .contact-me br {
+        display: none;
+    }
+    .contact-me {
+        padding-bottom: 0;
+    }
+    .backtotop {
+        display: none;
+    }
+    footer {
+        margin: 0;
+    }
+    .description {
+        margin-bottom: 0;
+    }
+    .name {
+        width: 100%;
+        float: none;
+    }
+    .name p {
+        text-align: center;
+    }
+    .character {
+        width: 100%;
+        box-sizing: border-box;
+        float: none;
+        border: none;
+        padding: 0;
+        
+    }
+    .character p:first-child,.character p:nth-child(2),.character p:nth-child(3),.character p:nth-child(4),.character p:nth-child(5) {
+        width: 100%;
+        text-align: center;
+    }
+    .about .about-bg {
+        margin-bottom: 0;
+    }
+    .about .about-bg img {
+        width: 65%;
+    }
+    #empty {
+    }
+    .contact-info {
+        
+    }
+    .contact-info div {
+        width: 100%;
+        float: none;
+        margin: 0;
+    }
+    .contact-info div p {
+        text-align: left;
+        padding-left: 10px;
+    }
+}

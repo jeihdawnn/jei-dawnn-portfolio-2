@@ -1,0 +1,67 @@
+.works {
+    padding-top: 50px;
+    z-index: 1;
+}
+.work-title h1 {
+    text-align: center;
+    font-family: "PT Sans Narrow", monospace, sans-serif;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+.works h2, .works p {
+    text-align: center;
+    color: white;
+    font-family: "PT Sans Narrow", monospace, sans-serif;
+    margin: 0;
+}
+.work1 {
+    background-color: teal;
+    padding: 30px 0;
+}
+.work1 img {
+    width: 750px;
+    display: block;
+    margin: 0 auto;
+}
+.work2 {
+    background-color: skyblue;
+    padding: 30px 0;
+}
+.work2 img {
+    width: 600px;
+    display: block;
+    margin: 0 auto;
+}
+.work2 h2 {
+    margin-top: -120px;
+}
+.work3 {
+    background-color: darkviolet;
+    padding: 30px 0;
+}
+.work3 img {
+    width: 600px;
+    display: block;
+    margin: 0 auto;
+}
+.work3 h2 {
+    margin-top: -100px;
+}
+.work4 {
+    background-color: darkkhaki;
+    padding: 30px 0;
+}
+.work4 img {
+    width: 600px;
+    margin: 0 auto;
+    display: block;
+}
+.work4 h2 {
+    margin-top: -100px;
+}
+
+.works > h2 {
+    color: white;
+    background-color: indianred;
+    padding: 30px 0;
+}

@@ -1,0 +1,49 @@
+.big-panel {
+    background-image: url("../Images/Jei.png");
+    background-size: contain;
+    background-position: center bottom;
+    height: 100vh;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    background-attachment: fixed;
+    
+}
+
+.scroll {
+    position: absolute;
+    width: 55px;
+    bottom: 0;
+    left: 50%;
+    z-index: 0;
+}
+.scroll p {
+    text-align: center;
+    font-family: "PT Sans Narrow", monospace, sans-serif;
+    width: 55px;
+    height: 55px;
+    box-sizing: border-box;
+    padding-top: 7px;
+    color: #000;
+    border-radius: 100%;
+    display: block;
+    text-decoration: none;
+    opacity: .8;
+}
+.scroll i {
+    -webkit-animation: movedown .7s linear infinite reverse;
+    animation: movedown .7s linear infinite;
+}
+@-webkit-keyframes movedown {
+  0% { -webkit-transform: translate(0px); }
+  100% { -webkit-transform: translate(7px); }
+}
+
+@keyframes movedown {
+  0% { transform: translate(0px); }
+  100% { transform: translate(0,7px); }
+}
+
+.s-container {
+    width: 100%;
+    height: 100%;
+}

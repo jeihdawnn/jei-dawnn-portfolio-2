@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JEI h.dawnn - web/graphic designer/photographer</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet"> 
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link href="style/stylesheet.css" type="text/css" rel="stylesheet">
+    <link href="style/about.css" type="text/css" rel="stylesheet">
+    <link href="style/contact.css" type="text/css" rel="stylesheet">
+    <link href="style/featured.css" type="text/css" rel="stylesheet">
+    <link href="style/footer.css" type="text/css" rel="stylesheet">
+    <link href="style/header.css" type="text/css" rel="stylesheet">
+    <link href="style/nav.css" type="text/css" rel="stylesheet">
+    <link href="style/skeleton.css" type="text/css" rel="stylesheet">
+    <link href="style/works.css" type="text/css" rel="stylesheet">
+    <link href="style/scale.css" type="text/css" rel="stylesheet">
+    <script src="javascript.js"></script>
+</head>
+<body onload="myFunction()" id="" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <div id="loader">
+        <div id="inner-loader"></div>
+    </div>
+    <div class="scroll">
+        <p>scroll<br>
+            <i class="fa fa-chevron-down"></i>
+        </p>
+    </div>
+    <div class="page" id="myPage" style="display:none">
+    <header class="w3-card-4">
+        <div class="logo-wrapper w3-animate-left">
+            <a href="#myPage"><img src="Images/Jei%20(logo).png" alt="JEI">
+            </a>
+        </div>
+        <p class="logo-text w3-animate-top">h.dawnn</p>
+        <nav class="social">
+            <div class="so-high">
+                <a href="https://twitter.com/jeihdawnn" target="_blank"  class="w3-animate-left">twitter</a>
+                <a href="#" id="hide">facebook</a>
+                <a href="https://www.instagram.com/jeihdawnn/" class="w3-animate-top" target="_blank">instagram</a>
+            </div>
+            <div class="so-low">
+                <a href="#" id="hide">twitter</a>
+                <a href="https://www.facebook.com/jeihdawnn" target="_blank" class="w3-animate-bottom">facebook</a>
+                <a href="#" id="hide">instagram</a>
+            </div>
+        </nav>
+        <nav class="main-nav">
+            <div class="nav-high">
+                <a href="#about" class="w3-animate-top">about me</a>
+                <a href="#mywork" id="hide">my work</a>
+                <a href="mailto:khachieu@outlook.com" class="w3-animate-right">email me</a>
+            </div>
+            <div class="nav-low">
+                <a href="#" id="hide">about me</a>
+                <a href="#mywork" class="w3-animate-bottom">my work</a>
+                <a href="mailto:khachieu@outlook.com" id="hide" style="z-index:-1;">email me</a>
+            </div>
+        </nav>
+        <span class="w3-opennav w3-xlarge w3-animate-right" id="opennav" onclick="w3_open()">
+            <span class="fa fa-list"></span>
+        </span>
+        
+        
+        <!--------------------------------------->
+        <nav class="w3-sidenav w3-black w3-card-2 w3-animate-top" id="mySidenav">
+            <a href="#"><img src="Images/Jei%20(logo).png" alt="JEI">
+            </a>
+            <a href="javascript:void(0)" onclick="w3_close()" class="w3-closenav w3-xlarge">
+                <span class="fa fa-close"></span>
+            </a>
+            <a href="#about" class="links" style="">about me</a>
+            <a href="#mywork" class="links">my work</a>
+            <div style="width:150px; margin:0 auto">
+                <a href="mailto:khachieu@outlook.com" class="links">email me</a>
+            </div>
+            <hr>
+            <a href="https://twitter.com/jeihdawnn" class="so-links">twitter</a>
+            <a href="https://www.facebook.com/jeihdawnn" class="so-links">facebook</a>
+            <a href="https://www.instagram.com/jeihdawnn/" class="so-links">instagram</a>
+        </nav>
+        <!--------------------------------------->
+        
+        
+    
+    </header>
+    <div class="s-container" id="top">
+        <div style="height:50px"></div>
+        <div class="big-panel">
+        </div>
+    </div>
+    <div class="about" id="about">
+        <h1>About me</h1>
+        <div class="about-bg w3-animate-bottom">
+            <img src="Images/profile.png" alt="Jei">
+        </div>
+        <div class="description">
+            <div class="name">
+                <p>it's  <span>JEI</span></p>
+            </div>
+            <div class="character">
+                <p>a <span>freelancer</span> from Vietnam who has a great great great love for <span>designing the Web</span> and travelling.</p>
+                <p>a weird guy whose <span>dreams</span> are <span>different</span> from those of the others.</p>
+                <p>a/an peace/ <span>animal</span>/ book/ <span>music</span>/ swimming/ <span>technology</span> lover.</p>
+                <p>a <span>photographer</span> who likes to capture <span>every</span> moment in life and turn it into  <span>memorable</span> things.</p>
+                <p>a <span>responsible</span> and an <span>enthusiastic</span> man, who put <span>100%</span> of his <span>mind</span> into what he does.</p>
+            </div>
+        </div>
+        <div class="contact-info">
+            <div class="location w3-animate-left">
+                <p><span class="fa fa-compass fa-lg"></span> Soc Son, Hanoi, Vietnam</p>
+            </div>
+            <div class="mobile w3-animate-bottom">
+                <p><span class="fa fa-phone fa-lg"></span> +84 969405164</p>
+            </div>
+            <div class="email w3-animate-right">
+                <p href="mailto:khachieu@outlook.com"><span class="fa fa-envelope-o fa-lg"></span> khachieu@outlook.com</p>
+            </div>
+        </div>
+    </div>
+    
+    <!---------------------------->
+    
+    <div class="works" id="mywork">
+        <div class="work-title">
+            <h1>My work</h1>
+        </div>
+        <div class="work1">
+            <img src="Images/works/koffy%20(final).png">
+            <h2>Kofffy for Coffee-lovers</h2>
+            <p>A website about Coffee for those who love</p>
+        </div>
+        <div class="work2">
+            <img src="Images/works/reflextor%20(final).png">
+            <h2>Reflextor</h2>
+            <p>Website for a maintenance service from experts</p>
+        </div>
+        <div class="work3">
+            <img src="Images/works/A+%20(final).png">
+            <h2>A+</h2>
+            <p>Website for trade company</p>
+        </div>
+        <div class="work4">
+            <img src="Images/works/routee%20(final).png">
+            <h2>Routee</h2>
+            <p>Website for travel addicts, home for those who love to explore</p>
+        </div>
+        <h2>Upcoming...</h2>
+    </div>
+    <div class="contact-me">
+        <h1>I am currently available for freelance work.</h1>
+        <h2>so</h2>
+        <h3>if you like my work or simply want<br> to say hi and be friends with me</h3>
+        <h1>CONTACT ME</h1>
+        <h3>via</h3>
+        <h2>email/social networks</h2>
+        <h5>links above</h5>
+        <hr style="width:300px">
+        <img src="Images/profile.png">
+        <h4> - Jei</h4>
+    </div>
+    <footer>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </footer>
+    </div>
+</body>
+</html>

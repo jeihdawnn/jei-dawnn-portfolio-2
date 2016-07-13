@@ -1,0 +1,51 @@
+.contact-me {
+ padding: 30px 0;
+    text-align: center;
+}
+.contact-me h1, .contact-me h2, .contact-me h3, .contact-me h4, .contact-me h5 {
+    margin: 0 auto;
+    color: white;
+    font-family: "PT Sans Narrow", monospace, sans-serif;
+}
+.contact-me h1 {
+    width: 500px;
+    background-color: cadetblue;
+}
+.contact-me h2 {
+    width: 300px;
+    background-color: rebeccapurple;
+}
+.contact-me h3 {
+    width: 350px;
+    background-color: darkseagreen;
+}
+.contact-me h4 {
+    width: 50px;
+    color: black;
+    background-color: coral;
+}
+.contact-me h5 {
+    width: 100px;
+    font-size: 15px;
+    color: black;
+    background-color: none;
+}
+.contact-me img {
+    width: 200px;
+}
+
+.contact-info {
+    width: 100%;
+    overflow: auto;
+    margin-bottom: 20px;
+}
+.contact-info div {
+    width: 33.33%;
+    float: left;
+}
+.contact-info div p {
+    text-align: center;
+}
+.contact-info div p span {
+    font-size: 2em;
+}

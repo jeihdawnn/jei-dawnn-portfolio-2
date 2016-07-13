@@ -1,0 +1,151 @@
+nav.social {
+    width: 20%;
+    float: left;
+    padding-top: 22px;
+    min-width: 250px;
+}
+
+nav.social a {
+    display: inline-block;
+    text-decoration: none;
+    font-family: "PT Sans Narrow", monospace, sans-serif;
+    font-size: 1.3em;
+    letter-spacing: .5px;
+}
+
+.so-high,.so-low {
+    width: 100%;
+    float: left;
+}
+.so-high a {
+    color: #fff;
+    position: relative;
+    top: 6px;
+}
+.so-low a {
+    color: #000;
+    position: relative;
+    top: -10px;
+}
+#hide {
+    visibility: hidden;
+}
+.so-high a:first-child:hover {
+    color: #1fe5e3;
+    transition: .4s;
+}
+.so-high a:last-child:hover {
+    color: #dccc5e;
+    transition: .4s;
+}
+.so-low a:hover {
+    color: #2a5793;
+    transition: .4s;
+}
+
+nav.main-nav {
+    width: 50%;
+    float: right;
+    padding-top: 13px;
+    padding-right: 60px;
+    box-sizing: border-box;
+}
+.main-nav div {
+    width: 100%;
+    display: block;
+    text-align: right;
+}
+.nav-low {
+    margin-top: -20px;
+}
+.main-nav a {
+    display: inline-block;
+    text-decoration: none;
+    font-family: "PT Sans Narrow", monospace, sans-serif;
+    font-size: 2em;
+    letter-spacing: .5px;
+    margin: 0 10px;
+    font-weight: bolder;
+}
+.nav-high a {
+    color: #fff;
+    top: 2px;
+}
+.nav-high a:last-child,.nav-low a:last-child {
+    background-color: #fff;
+    color: #000;
+    padding: 0 10px;
+}
+.nav-high a:last-child {
+    padding-bottom: 5px;
+    background-color: #109e82;
+    color: white;
+}
+.nav-low a {
+    color: #000;
+    top: -6px;
+}
+.nav-high a:first-child:hover {
+    color: darkseagreen;
+    transition: .2s;
+}
+.nav-high a:last-child:hover {
+    color: #000;
+    background-color: #4fd48e;
+    transition: .2s;
+    box-shadow: 8px 8px 20px -5px rgba(0,0,0,0.5); 
+}
+.nav-low a:hover {
+    color: #c72222;
+    transition: .2s;
+}
+
+
+
+.w3-sidenav {
+    display: none;
+    right: 0;
+    width: 100%;
+    opacity: .9;
+}
+.w3-sidenav a {
+    font-family: "PT Sans Narrow", monospace, sans-serif;
+    font-size: 2em;
+    text-align: center;
+    padding: 0;
+}
+
+.w3-sidenav .w3-closenav {
+    display: block;
+    width: 50px;
+    float: right;
+}
+.w3-closenav span {
+    font-size: 1.5em;
+}
+.w3-sidenav > a:first-child {
+    width: 100px;
+    display: block;
+    float: left;
+    visibility: hidden;
+}
+.w3-sidenav img {
+    width: 100px;
+}
+
+.links {
+    clear: both;
+}
+
+hr {
+    width: 70%;
+    margin: 20px auto;
+}
+.w3-sidenav div {
+    overflow: auto;
+    background-color: #109e82;
+    color: white;
+}  
+.w3-opennav {
+    display: none;
+}
