@@ -1,5 +1,3 @@
-
-        
 function w3_open() {     
     document.getElementById("mySidenav").style.display = "block";
     document.getElementById("opennav").style.visibility = "hidden";
