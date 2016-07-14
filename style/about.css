@@ -5,18 +5,19 @@
     font-family: "PT Sans Narrow", monospace, sans-serif;
     text-align: center;
     font-weight: bolder;
+    display: none;
+    
 }
 .about .about-bg {
-    background-image: url(../Images/about%20patterns.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
     margin-bottom: 30px;
+    position: relative;
 }
 .about .about-bg img {
     display: block;
-    width: 490px;
+    width: 500px;
     margin: 0 auto;
+    position: relative;
+    transform: scale(1);
 }
 .description {
     width: 100%;
@@ -74,4 +75,76 @@
 .character p span {
     font-weight: bold;
     background-color: white;
+}
+
+.left {
+    position: absolute;
+    left: 0;
+    display: none;
+    z-index: -1;
+}
+.right {
+    position: absolute;
+    right: 0;
+    display: none;
+    z-index: -1;
+}
+.show {
+    display: block;
+}
+.left.ani1 {top: 2%;} 
+.left.ani2 {top: 20%;}
+.left.ani3 {top: 30%;}
+.left.ani4 {top: 55%;}
+.left.ani5 {top: 70%;}
+.left.ani6 {top: 88%;}
+        
+.right.ani1 {top: 2%;} 
+.right.ani2 {top: 10%;}
+.right.ani3 {top: 30%;}
+.right.ani4 {top: 45%;}
+.right.ani5 {top: 70%;}
+.right.ani6 {top: 78%;}
+        
+.animated-left {
+    animation: expand .5s ease-in-out;
+    -webkit-animation: expand .5s ease-in-out;
+}
+.animated-right {
+    animation: expand-reverse .5s ease-in-out;
+    -webkit-animation: expand-reverse .5s ease-in-out;
+}
+@keyframes expand {
+     0% {left: -1000px;}
+    100% {left: 0;}
+}
+@-webkit-keyframes expand {
+     0% {left: -1000px;}
+    100% {left: 0;}
+}
+@keyframes expand-reverse {
+    0% {right: -1000px}
+    100% {right: 0}
+}
+@-webkit-keyframes expand-reverse {
+    0% {right: -1000px}
+    100% {right: 0}
+}
+
+.animated-scale {
+    animation: ani-scale 1s ease-in-out;
+    -webkit-animation: ani-scale 1s ease-in-out;
+}
+
+@keyframes ani-scale {
+    0% {transform: scale(0)}
+    60% {transform: scale(1.3)}
+    75% {transform: scale(0.9)}
+    100% {transform: scale(1)}
+}
+@-webkit-keyframes ani-scale {
+    0% {transform: scale(0)}
+    60% {transform: scale(1.3)}
+    75% {transform: scale(0.9)}
+    100% {transform: scale(1)}
 }
