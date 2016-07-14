@@ -1,7 +1,7 @@
         
 var myVar;
 function myFunction() {
-    myVar = setTimeout(showPage, 2000);
+    myVar = setTimeout(showPage, 2500);
 };   
 function showPage() {
     document.getElementById("loader").style.display = "none";
@@ -37,13 +37,18 @@ $(window).scroll(function(){
     if (wScroll > $('.about').offset().top - ($(window).height() / 1.2)) {
         $("#aboutme").fadeIn(400);
     };
+    
+    
     if (wScroll > 300 && wScroll < 600) {
         $(".scroll").fadeOut(700);
     } else {
         $(".scroll").fadeIn(700);
     };
     
+    if (wScroll > $('.description').offset().top - ($(window).height() / 1)) {
+        $(".character").addClass("animated-width");
+    }
     
 });
-
+//end of Scrolling Function
 });

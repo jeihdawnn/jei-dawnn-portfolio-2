@@ -11,6 +11,7 @@
 .about .about-bg {
     margin-bottom: 30px;
     position: relative;
+    overflow: hidden;
 }
 .about .about-bg img {
     display: block;
@@ -33,9 +34,10 @@
 }
 .character {
     width: 70%;
-    float: right;
+    float: left;
     border-left: 5px solid black;
     min-width: 0px;
+    overflow: hidden;
 }
 .name p {
     font-size: 2em;
@@ -81,7 +83,7 @@
     position: absolute;
     left: 0;
     display: none;
-    z-index: -1;
+    z-index: -1; 
 }
 .right {
     position: absolute;
@@ -89,6 +91,7 @@
     display: none;
     z-index: -1;
 }
+
 .show {
     display: block;
 }
@@ -115,11 +118,11 @@
     -webkit-animation: expand-reverse .5s ease-in-out;
 }
 @keyframes expand {
-     0% {left: -1000px;}
+    0% {left: -1000px;}
     100% {left: 0;}
 }
 @-webkit-keyframes expand {
-     0% {left: -1000px;}
+    0% {left: -1000px;}
     100% {left: 0;}
 }
 @keyframes expand-reverse {
@@ -132,19 +135,39 @@
 }
 
 .animated-scale {
-    animation: ani-scale 1s ease-in-out;
-    -webkit-animation: ani-scale 1s ease-in-out;
+    animation: ani-scale 10s ease-in-out infinite;
+    -webkit-animation: ani-scale 10s ease-in-out infite;
 }
 
 @keyframes ani-scale {
-    0% {transform: scale(0)}
-    60% {transform: scale(1.3)}
-    75% {transform: scale(0.9)}
+    0% {transform: scale(1)}
+    15% {transform: scale(1.7)}
+    45% {transform: scale(1.5)}
+    55% {transform: scale(3)}
+    72% {transform: scale(1.5)}
+    75% {transform: scale(1.55)}
+    85% {transform: scale(0.97)}
     100% {transform: scale(1)}
 }
 @-webkit-keyframes ani-scale {
-    0% {transform: scale(0)}
-    60% {transform: scale(1.3)}
-    75% {transform: scale(0.9)}
+    0% {transform: scale(1)}
+    15% {transform: scale(1.7)}
+    45% {transform: scale(1.5)}
+    55% {transform: scale(3)}
+    72% {transform: scale(1.5)}
+    75% {transform: scale(1.55)}
+    85% {transform: scale(0.97)}
     100% {transform: scale(1)}
+}
+.animated-width {
+    animation: show-width 1s ease-in-out;
+    -webkit-animation: show-width 1s ease-in-out;
+}
+@keyframes show-width {
+    0% {width: 0;}
+    100% {width: 70%};
+}
+@-webkit-keyframes show-width {
+    0% {width: 0;}
+    100% {width: 70%};
 }
