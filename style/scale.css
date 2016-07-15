@@ -85,5 +85,23 @@
     .OPEN {
         display: block;
     }
-    
+    .contact-me {
+        background-size: 70%;
+    }
+    .contact-me .job-wrapper {
+        height: auto;
+    }
+    .contact-me .job-wrapper div {
+        width: 100%;
+    }
+    .contact-me .job-wrapper .available h1 {
+        font-size: 2em;
+    }
+    .contact-me .job-wrapper .extra-text p {
+        width: 100%;
+        font-size: 1.5em;
+    }
+    .contact-me img {
+        margin: 10px auto;
+    }
 }
