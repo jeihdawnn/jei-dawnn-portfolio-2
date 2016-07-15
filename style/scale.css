@@ -1,15 +1,11 @@
 @media screen and (max-width:1020px) {
+    
     header .logo-text, header .social, header .main-nav {
         display: none;
     }
     .scroll {
         display: none;
-    }
-    .w3-opennav {
-        display: block;
-        color: white;
-        float: right;
-        padding: 5px 10px 0 0;
+        visibility: hidden;
     }
     .big-panel {
         margin-top: 20px;
@@ -59,6 +55,7 @@
         float: none;
         border: none;
         padding: 0;
+        display: none;
         
     }
     .character p:first-child,.character p:nth-child(2),.character p:nth-child(3),.character p:nth-child(4),.character p:nth-child(5) {
@@ -85,4 +82,8 @@
         text-align: left;
         padding-left: 10px;
     }
+    .OPEN {
+        display: block;
+    }
+    
 }

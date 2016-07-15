@@ -96,56 +96,149 @@ nav.main-nav {
     box-shadow: 8px 8px 20px -5px rgba(0,0,0,0.5); 
 }
 .nav-low a:hover {
-    color: #c72222;
+    color: indianred;
     transition: .2s;
 }
 
-
-
-.w3-sidenav {
+.side-navigation {
     display: none;
+    height: 100vh;
+    width: 100px;
+    position: absolute;
+    z-index: ;
     right: 0;
-    width: 100%;
-    opacity: .9;
+    background-color: white;
+    overflow-y: auto;
 }
-.w3-sidenav a {
-    font-family: "PT Sans Narrow", monospace, sans-serif;
-    font-size: 2em;
+.side-navigation a {
+    display: block;
+    padding: 7px 0;
+    color: black;
+    text-decoration: none;
     text-align: center;
-    padding: 0;
+    font-family: "PT Sans Narrow", monospace;
+    font-size: 1.em;
+    text-transform: uppercase;
 }
-
-.w3-sidenav .w3-closenav {
-    display: block;
-    width: 50px;
-    float: right;
+.side-navigation a:hover {
+    background-color: whitesmoke;
+    transition: .3s;
 }
-.w3-closenav span {
-    font-size: 1.5em;
-}
-.w3-sidenav > a:first-child {
-    width: 100px;
-    display: block;
-    float: left;
-    visibility: hidden;
-}
-.w3-sidenav img {
-    width: 100px;
-}
-
-.links {
-    clear: both;
-}
-
-hr {
-    width: 70%;
-    margin: 20px auto;
-}
-.w3-sidenav div {
-    overflow: auto;
-    background-color: #109e82;
+.side-navigation a#email-button {
+    background-color: teal;
     color: white;
-}  
-.w3-opennav {
-    display: none;
 }
+.side-navigation a#email-button:hover {
+    background-color: steelblue;
+    transition: .3s;
+    
+}
+.side-navigation hr {
+    width: 50px;
+    margin: 5px auto 0 auto;
+}
+
+.OPEN {
+            display: none;
+            text-decoration: none;
+            width: 50px;
+            height: 50px;
+            position: fixed;
+            top: 0;
+            right: 0;
+            box-sizing: border-box;
+            color: white;
+            text-align: center;
+            z-index: 11;
+            padding-top: 10px;
+    
+}
+.bar1, .bar2, .bar3 {
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    margin: 6px auto;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+
+
+/* .animated-push-sidebar {
+    animation: push-sidebar .3s ease-in-out;
+    -webkit-animation: push-sidebar .3s ease-in-out;
+}
+.animated-push-openNAV {
+    animation: push-openNAV .3s ease-in-out;
+    -webkit-animation: push-openNAV .3s ease-in-out;
+}
+@keyframes push-sidebar {
+    0% {right: -100px;}
+    100% {right: 0;}
+}
+@-webkit-keyframes push-sidebar {
+    0% {right: -100px;}
+    100% {right: 0;}
+}
+@keyframes push-openNAV {
+    0% {right: -50px;}
+    100% {right: 0;}
+}
+@-webkit-keyframes push-sidebar-openNAV {
+    0% {right: -50x;}
+    100% {right: 0;}
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

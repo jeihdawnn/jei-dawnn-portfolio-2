@@ -3,7 +3,7 @@ header {
     height: 50px;
     background-color: #000;
     position: fixed;
-    z-index: 20;
+    z-index: 10;
 }
 header .logo-wrapper {
     width: 10%;

@@ -20,6 +20,7 @@
     <script src="javascript.js"></script>
 </head>
 <body onload="myFunction()" id="" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <!----LOADER/SCROLL---->
     <div id="loader">
         <div id="inner-loader"></div>
     </div>
@@ -29,7 +30,15 @@
             <i class="fa fa-chevron-down"></i>
         </p>
     </div>
-    <header class="w3-card-4">
+    
+    <a href="#" onclick='$(".side-navigation").fadeToggle()' class="OPEN w3-animate-right">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </a>
+        
+    <!----HEADER---->
+    <header class="w3-card-2">
         <div class="logo-wrapper w3-animate-left">
             <a href="#myPage"><img src="Images/Jei%20(logo).png" alt="JEI">
             </a>
@@ -59,38 +68,32 @@
                 <a href="mailto:khachieu@outlook.com" id="hide" style="z-index:-1;">email me</a>
             </div>
         </nav>
-        <span class="w3-opennav w3-xlarge w3-animate-right" id="opennav" onclick="w3_open()">
-            <span class="fa fa-list"></span>
-        </span>
         
         
-        <!--------------------------------------->
-        <nav class="w3-sidenav w3-black w3-card-2 w3-animate-top" id="mySidenav">
-            <a href="#"><img src="Images/Jei%20(logo).png" alt="JEI">
+        <!----------SIDENAV----------->
+        <nav class="side-navigation w3-card-2 w3-animate-right">
+            <a style="height:50px; background:black;">
             </a>
-            <a href="javascript:void(0)" onclick="w3_close()" class="w3-closenav w3-xlarge">
-                <span class="fa fa-close"></span>
-            </a>
-            <a href="#about" class="links" style="">about me</a>
-            <a href="#mywork" class="links">my work</a>
-            <div style="width:150px; margin:0 auto">
-                <a href="mailto:khachieu@outlook.com" class="links">email me</a>
-            </div>
+            <a href="#about">about me</a>
+            <a href="#mywork">my work</a>
+            <a href="mailto:khachieu@outlook.com" id="email-button">email me</a>
             <hr>
-            <a href="https://twitter.com/jeihdawnn" class="so-links">twitter</a>
-            <a href="https://www.facebook.com/jeihdawnn" class="so-links">facebook</a>
-            <a href="https://www.instagram.com/jeihdawnn/" class="so-links">instagram</a>
+            <a href="https://twitter.com/jeihdawnn">twitter</a>
+            <a href="https://www.facebook.com/jeihdawnn">facebook</a>
+            <a href="https://www.instagram.com/jeihdawnn/">instagram</a>
         </nav>
-        <!--------------------------------------->
+        </header>
         
         
-    
-    </header>
+    <!----LANDING PAGE---->    
     <div class="s-container" id="top">
         <div style="height:50px"></div>
         <div class="big-panel">
         </div>
     </div>
+        
+        
+    <!----ABOUT---->
     <div class="about" id="about">
         <h1 id="aboutme">About me</h1>
         <div class="about-bg">
@@ -135,7 +138,7 @@
         </div>
     </div>
     
-    <!---------------------------->
+    <!----------WORK------------->
     
     <div class="works" id="mywork">
         <div class="work-title">
@@ -163,6 +166,9 @@
         </div>
         <h2>Upcoming...</h2>
     </div>
+        
+        
+    <!----CONTACT---->
     <div class="contact-me">
         <h1>I am currently available for freelance work.</h1>
         <h2>so</h2>
@@ -175,12 +181,25 @@
         <img src="Images/profile.png">
         <h4> - Jei</h4>
     </div>
+        
+    <!----FOOTER---->
     <footer>
         <div></div>
         <div></div>
         <div></div>
         <div></div>
     </footer>
+       
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
     </div>
 </body>
 </html>

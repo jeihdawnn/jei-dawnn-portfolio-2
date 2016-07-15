@@ -4,21 +4,12 @@ function myFunction() {
     myVar = setTimeout(showPage, 2500);
 };   
 function showPage() {
-    document.getElementById("loader").style.display = "none";
-    document.getElementById("myPage").style.display = "block";
+    document.getElementById("loader").style.display = "none"; document.getElementById("myPage").style.display = "block";
 };
 
 $(document).ready(function(){
 //Navigation
-function w3_open() {     
-    document.getElementById("mySidenav").style.display = "block";
-    document.getElementById("opennav").style.visibility = "hidden";
-    };
-function w3_close() {
-    document.getElementById("mySidenav").style.display= "none";
-    document.getElementById("opennav").style.visibility = "visible";
-    };
-
+    
 //Scrolling
 $(window).scroll(function(){
     var wScroll = $(document).scrollTop();
@@ -46,7 +37,7 @@ $(window).scroll(function(){
     };
     
     if (wScroll > $('.description').offset().top - ($(window).height() / 1)) {
-        $(".character").addClass("animated-width");
+        $(".character").fadeIn(2000);
     }
     
 });
