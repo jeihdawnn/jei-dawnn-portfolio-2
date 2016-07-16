@@ -4,6 +4,7 @@
     font-family: "Homemade Apple", serif;
     padding: 5px 0;
     font-size: 2em;
+    margin-bottom: 0;
 }
 .contact-me img {
     width: 200px;
@@ -16,13 +17,17 @@
     display: none;
 }
 .contact-me {
-    background-image: url('/Images/rose-overlay.png');
     background-attachment: fixed;
     background-size: 15%;
+    background-repeat: repeat;
+    width: 100%;
+    overflow: hidden;
 }
 .contact-me .job-wrapper {
     overflow: auto;
     height: 500px;
+    width: 100%;
+    overflow: hidden;
 }
 .job-wrapper .available {
     width: 50%;
@@ -33,6 +38,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 .job-wrapper .extra-text {
     width: 50%;

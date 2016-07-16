@@ -21,6 +21,16 @@
     <script src="javascript.js"></script>
 </head>
 <body onload="myFunction()" id="" data-spy="scroll" data-target=".navbar" data-offset="60">
+    
+    
+   
+    <noscript>
+          "Please allow Javascript to run! My site needs that.<br>Thanks! :)
+    </noscript>
+    
+    
+    
+    
     <!----LOADER/SCROLL---->
     <div id="loader">
         <div id="inner-loader"></div>
@@ -32,7 +42,7 @@
         </p>
     </div>
     
-    <a onclick='$(".side-navigation").fadeToggle()' class="OPEN w3-animate-right">
+    <a onclick="myFun()" class="OPEN w3-animate-right">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
@@ -149,7 +159,7 @@
         
         
     <!----CONTACT---->
-    <div class="contact-me">
+    <div class="contact-me" style="background-image: url('/Images/rose-overlay.png')">
         <div class="job-wrapper">
             <div class="available">
                 <h1>I am currently available for <span>'freelancing'</span> . . . </h1>
@@ -159,7 +169,7 @@
             </div>
         </div>
         <hr style="width:300px">
-        <img src="Images/profile.png">
+        <img id="end-logo" src="Images/profile.png">
         <h4> - Jei</h4>
     </div>
         

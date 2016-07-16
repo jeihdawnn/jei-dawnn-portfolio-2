@@ -80,6 +80,7 @@ nav.main-nav {
     padding-bottom: 5px;
     background-color: #109e82;
     color: white;
+    z-index: 20;
 }
 .nav-low a {
     color: #000;
@@ -166,24 +167,10 @@ nav.main-nav {
     transition: 0.4s;
 }
 
-/* Rotate first bar */
-.change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-    transform: rotate(-45deg) translate(-9px, 6px) ;
+.invisible {
+    visibility: hidden;
+    transition: 0.4s;
 }
-
-/* Fade out the second bar */
-.change .bar2 {
-    opacity: 0;
-}
-
-/* Rotate last bar */
-.change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-    transform: rotate(45deg) translate(-8px, -8px) ;
-}
-
-
 
 /* .animated-push-sidebar {
     animation: push-sidebar .3s ease-in-out;
